@@ -12,6 +12,9 @@
     <link>{{ .Permalink }}</link>
     <description>{{ i18n "string_recent_content" }} {{ if ne  .Title  site.Title }}{{ with .Title }}{{ i18n "string_in" }} {{ . }} {{ end }}{{ end }}{{ i18n "string_on" }} {{ site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>
+    <podcast:value type="lightning" method="keysend" suggested="0.00000005000">
+      <podcast:valueRecipient name="Podcaster (on Alby)" type="node" address="030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3" customKey="696969" customValue="QQavNjQSL06IPPFNjv4S" split="100" />
+    </podcast:value>
     {{ with site.LanguageCode -}}
     <language>{{ . }}</language>
     {{ end -}}
